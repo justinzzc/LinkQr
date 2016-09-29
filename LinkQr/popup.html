@@ -1,0 +1,67 @@
+<meta charset="UTF-8">
+<style>
+	*{margin:0;padding:0;}
+	h2{
+		text-align: center;
+		line-height: 2em;
+		margin-top: 8px;
+		color: #555;
+		font-size: 18px;
+		display: none;
+	}
+	.tc{
+		text-align: center;
+	}
+	#qr{
+		display:inline-block;
+		margin: 8px;
+		border-radius: 4px;
+		overflow: hidden;
+		width: 200px;
+		height:200px;
+		padding: 8px;
+	}
+	#download{
+		
+	    color: #555;
+	    font-size: 16px;
+
+	    display: inline-block;
+	    -webkit-user-select: none;
+	    -webkit-tap-highlight-color:transparent;
+	    cursor: pointer;
+	    opacity: .95;
+	}
+	.ct{
+		overflow: hidden;
+		position: relative;
+	}
+	.btn{
+		position: absolute;
+		left: 0;
+		top: 290px;
+		right: 0;
+		bottom: 0;
+		margin-top: -2em;
+		line-height: 300px;
+		transition:all 500ms;
+		background: #fff
+	}
+	.ct:hover .btn{
+		top: 0;
+	}
+	.words{
+		font-size: 24px;
+	}
+</style>
+<script type="text/javascript" src="./jquery.min.js"></script>
+<script type="text/javascript" src="./jquery.qrcode.min.js"></script>
+<script type="text/javascript" src="./main.js"></script>
+<div class="ct">
+	<h2>当前页二维码</h2>
+	<div id="qr"></div>
+	<div class="btn tc" id="download">
+		<span class="words">(下 载)Download</span>
+	</button>
+	</div>
+</div>
